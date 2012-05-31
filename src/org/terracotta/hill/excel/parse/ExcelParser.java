@@ -65,7 +65,7 @@ public class ExcelParser {
 		Iterator it = tableMap.keySet().iterator();
 		while(it.hasNext()){
 			ExcelTable table = (ExcelTable)tableMap.get(it.next());
-			DefaultExcelSheetTable sheetTable = new DefaultExcelSheetTable(sheet, table);
+			POIExcelSheetTable sheetTable = new POIExcelSheetTable(sheet, table);
 			
 			result.put(table.getId(), sheetTable);
 		}

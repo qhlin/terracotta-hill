@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.Map;
 
 import org.terracotta.hill.excel.parse.ExcelParser;
-import org.terracotta.hill.excel.parse.DefaultExcelSheetTable;
+import org.terracotta.hill.excel.parse.POIExcelSheetTable;
 
 public class DefaultExcelTableFactory implements ExcelTableFactory {
 	private String configFilePath;
@@ -28,7 +28,7 @@ public class DefaultExcelTableFactory implements ExcelTableFactory {
 		}
 	}
 	
-	public DefaultExcelSheetTable getExcelSheetTable(String tableId){
-		return (DefaultExcelSheetTable)excelTableMap.get(tableId);
+	public POIExcelSheetTable getExcelSheetTable(String tableId){
+		return (POIExcelSheetTable)excelTableMap.get(tableId);
 	}
 }

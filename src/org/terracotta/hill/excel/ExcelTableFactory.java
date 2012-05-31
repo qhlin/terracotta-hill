@@ -1,7 +1,7 @@
 package org.terracotta.hill.excel;
 
-import org.terracotta.hill.excel.parse.DefaultExcelSheetTable;
+import org.terracotta.hill.excel.parse.POIExcelSheetTable;
 
 public interface ExcelTableFactory {
-	public DefaultExcelSheetTable getExcelSheetTable(String tableId);
+	public POIExcelSheetTable getExcelSheetTable(String tableId);
 }
