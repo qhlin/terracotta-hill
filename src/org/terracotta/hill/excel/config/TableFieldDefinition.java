@@ -3,8 +3,15 @@ package org.terracotta.hill.excel.config;
 
 import java.io.Serializable;
 
-public class ExcelField implements Serializable {
+public class TableFieldDefinition implements Serializable {
 	private static final long serialVersionUID = 1L;
+	public static final String ELEMENT_NAME = "property";
+	
+	public static final String PROPERTY_INDEX = "index";
+	public static final String PROPERTY_NOT_NULL = "notNull";
+	public static final String PROPERTY_PROPERTY_NAME = "propertyName";
+	public static final String PROPERTY_REQUIRE_LABEL = "requireLabel";
+	public static final String PROPERTY_DATA_TYPE = "dataType";
 	
 	private int index;
 	private String propertyName;

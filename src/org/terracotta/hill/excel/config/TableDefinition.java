@@ -4,8 +4,15 @@ package org.terracotta.hill.excel.config;
 import java.io.Serializable;
 import java.util.List;
 
-public class ExcelTable implements Serializable {
+public class TableDefinition implements Serializable {
 	private static final long serialVersionUID = 1L;
+	
+	public static final String ELEMENT_NAME = "table";
+	
+	public static final String PROPERTY_ID = "id";
+	public static final String PROPERTY_CLASS_NAME = "className";
+	public static final String PROPERTY_DISPLAY_MODE = "displayMode";
+	public static final String PROPERTY_RECORD_INDEX_BEGIN = "recordIndexBegin";
 	/**
 	 * 垂直方向，一列表示一条记录
 	 * */

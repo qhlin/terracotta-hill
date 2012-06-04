@@ -4,10 +4,12 @@ import java.math.BigDecimal;
 
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFRow;
-import org.terracotta.hill.excel.config.ExcelField;
+import org.terracotta.hill.excel.config.TableFieldDefinition;
+import org.terracotta.hill.util.UtilReflect;
+import org.terracotta.hill.util.UtilString;
 
 public class UtilProperty {
-	public static void setFieldValue(ExcelField field, Object obj, HSSFRow row){
+	public static void setFieldValue(TableFieldDefinition field, Object obj, HSSFRow row){
 		String dataType = field.getType();
 		String value = getCellValue(row.getCell(field.getIndex()));
 
