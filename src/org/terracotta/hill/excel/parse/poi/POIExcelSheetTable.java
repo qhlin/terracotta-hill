@@ -76,9 +76,6 @@ public class POIExcelSheetTable implements ExcelSheetTable {
 		return result;
 	}
 	
-	public IRecordEndCallback getRecordEnd() {
-		return recordEnd;
-	}
 	public void setRecordEnd(IRecordEndCallback recordEnd) {
 		this.recordEnd = recordEnd;
 	}
